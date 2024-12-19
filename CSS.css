@@ -16,6 +16,7 @@ body {
 }
 
 .header-area {
+   
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -431,4 +432,86 @@ h2{
     font-size: 3em;
     color: black;
     text-align: center;
+}
+
+
+.Review_Part {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    text-align: center; 
+    margin-bottom: 30px; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+.Reviews {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    padding: 20px;
+    background-color: #f8f9fa;}
+
+.Review_Card {
+    position: relative;
+    background: #fff;
+    box-shadow: 0 4px 12px skyblue;
+    padding: 20px;
+    width: 280px;
+    height: 280px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left; 
+}
+
+
+.Review_Card::before {
+        content: '”'; 
+        position: absolute;
+        top: -10px; 
+        right: 10px; 
+        font-size: 150px; 
+        color: #eee;
+        font-family: serif;}
+
+
+.Review_img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #00bcd4;
+    object-fit: cover;
+    margin-bottom: 10px;
+    
+}
+
+
+.Name_Of_Review {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.Text_in_Cards {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+
+.Stars_In_Review {
+    font-size: 18px;
+    color:teal; 
+    letter-spacing: 2px;
+}
+
+
+::-webkit-scrollbar {
+    width: 8px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: teal; 
+    border-radius: 10px; 
 }
