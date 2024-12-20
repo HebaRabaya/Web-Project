@@ -143,6 +143,8 @@ nav ul li a:hover {
     border-radius: 4px;
     display: block;
     margin-top: 25px;
+
+    
 }
 
 .explore-btn:hover {
@@ -205,7 +207,7 @@ nav ul li a:hover {
 .about-area {
     padding: 50px 20px;
     text-align: center;
-    background-color: transparent; /* إزالة الخلفية */
+    background-color: transparent; 
 }
 
 .about-box {
@@ -267,7 +269,35 @@ nav ul li a:hover {
     margin-bottom: 30px;
     color: #333;
 }
+.custom-scrollbar
+           {
+            display:flex;
+             justify-content: space-between ;
+             gap:24px;
+             overflow-x: auto;
+             overflow-y: hidden;
+              margin: 20px;
+             padding: 10px;
+          }       
+        .custom-scrollbar::-webkit-scrollbar 
+        {
+             height: 5px;
+        }
+       .custom-scrollbar::-webkit-scrollbar-track 
+       {
+         background:rgb(218, 215, 215);
+         border-radius: 5px; 
+       }
+      .custom-scrollbar::-webkit-scrollbar-thumb 
+      {
+        background: #089a9a; 
+        border-radius:5px; 
+      }
 
+     .custom-scrollbar::-webkit-scrollbar-thumb:hover 
+     {
+        background:#089a9a; 
+     }
 .books-container {
     display: flex;
     justify-content: center;
@@ -280,9 +310,13 @@ nav ul li a:hover {
     border: 1px solid gray;
     padding: 20px;
     width: 200px;
+    height: 350px;
     text-align: center;
     box-shadow: 0 4px 6px blue(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
+     display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .book-card:hover {
     border-color: #000000; 
@@ -516,3 +550,204 @@ h2{
     background-color: teal; 
     border-radius: 10px; 
 }
+.banner{
+   position: relative;
+
+}
+
+.banner_button{
+    background-color: teal;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+    position: absolute;
+    bottom: 70px;
+    left: 50px;
+   
+ 
+ }
+
+ 
+  h1 {
+    margin-top: 20px;
+    font-size: 2.5em;
+    color: black;
+    text-align: center;
+  }
+  
+  .blog-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .blog-card {
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 2px 2px rgba(100, 98, 98, 0.5);
+    margin-right: 60px;
+  }
+  
+  .blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .blog-content {
+    padding: 15px;
+  }
+  
+  .blog-content h3 {
+    margin: 0 0 10px;
+    color: #00a0e3;
+  }
+  
+  .blog-content p {
+    font-size: 0.9em;
+    color: black;
+    line-height: 1.5;
+  }
+  .footer {
+    background-color: #e0e0e0;
+    padding: 30px 20px;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+  }
+  
+  .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-section ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #007b7b;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .social-icons a:hover {
+    color: #007b7b;
+  }
+  
+  .footer-section form {
+    display: flex;
+  flex-direction: column;
+  }
+  
+  .footer-section form input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 40px;
+    background-color: rgb(190, 185, 185);
+  }
+  
+  .footer-section form button {
+   
+width: 100px;
+    border: none;
+    background-color: #007b7b;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    margin: 20px;
+  }
+  
+  .footer-section form button:hover {
+    background-color: teal;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: gray;
+    border-radius: 100px;
+  }
+  
+  .footer-bottom a {
+    text-decoration: none;
+    color: teal;
+  }
+.newsletter {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .newsletter-form {
+    display: flex;
+  }
+
+  .newsletter-form input {
+    padding: 10px 15px;
+    border-radius: 100px; 
+    width: 250px;
+    background-color: gray;
+    font-size: 14px;
+    outline: none; 
+  }
+  
+  .newsletter-form input:focus {
+    border-color: #0097a7; 
+  }
+  
+  .newsletter-form button {
+    padding: 10px 15px;
+    background-color: #0097a7; 
+    color: gray;
+    border: none;
+    border-radius: 100px; 
+    font-size: 14px;
+    cursor: pointer;
+    width: 100px;
+   
+  }
+  .newsletter-form button:hover {
+    background-color: #007b7b; 
+  }
+  
