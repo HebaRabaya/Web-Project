@@ -267,7 +267,35 @@ nav ul li a:hover {
     margin-bottom: 30px;
     color: #333;
 }
+.custom-scrollbar
+           {
+            display:flex;
+             justify-content: space-between ;
+             gap:24px;
+             overflow-x: auto;
+             overflow-y: hidden;
+              margin: 20px;
+             padding: 10px;
+          }       
+        .custom-scrollbar::-webkit-scrollbar 
+        {
+             height: 5px;
+        }
+       .custom-scrollbar::-webkit-scrollbar-track 
+       {
+         background:rgb(218, 215, 215);
+         border-radius: 5px; 
+       }
+      .custom-scrollbar::-webkit-scrollbar-thumb 
+      {
+        background: #089a9a; 
+        border-radius:5px; 
+      }
 
+     .custom-scrollbar::-webkit-scrollbar-thumb:hover 
+     {
+        background:#089a9a; 
+     }
 .books-container {
     display: flex;
     justify-content: center;
@@ -280,9 +308,13 @@ nav ul li a:hover {
     border: 1px solid gray;
     padding: 20px;
     width: 200px;
+    height: 350px;
     text-align: center;
     box-shadow: 0 4px 6px blue(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
+     display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .book-card:hover {
     border-color: #000000; 
