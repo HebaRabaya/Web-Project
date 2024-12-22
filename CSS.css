@@ -16,7 +16,7 @@ body {
     margin: 0 auto;
     padding: 0;
 }
-
+/*header*/
 .header-area {
     display: flex;
     justify-content: space-between;
@@ -81,7 +81,7 @@ nav ul li a:hover {
 .header-icons i:hover {
     color: teal;
 }
-
+/*Welcome to book store*/
 .intro-section {
     background-image: url('./bg.png');
     background-size: cover;
@@ -262,7 +262,7 @@ nav ul li a:hover {
 .explore-btn:hover {
     background-color: #005f5f;
 }
-
+/*featured books*/
 .featured-books {
     text-align: center;
     padding: 50px 20px;
@@ -387,7 +387,6 @@ nav ul li a:hover {
     font-weight: normal;
 }
 
-
 .learn-more-btn {
     background-color: #fff;
     color: #089a9a;
@@ -406,7 +405,7 @@ nav ul li a:hover {
     color: #fff;
 }
 
-
+/*New arrivals*/
 
    h1 {
     margin: 20px 0; 
@@ -495,6 +494,7 @@ nav ul li a:hover {
         cursor: pointer; 
         font-size: 14px; 
 }
+/*Reviews*/
 h2{
     margin: 1.25rem 0; 
     font-size: 3em;
@@ -574,7 +574,7 @@ h2{
     letter-spacing: 0.125rem;
 }
 
-
+/*Digital book*/
 ::-webkit-scrollbar {
     width: 8px; 
 }
@@ -603,7 +603,7 @@ h2{
  
  }
 
- 
+ /*Our blog*/
   h1 {
     margin-top: 1.25rem;
     font-size: 2.5em;
@@ -650,6 +650,7 @@ h2{
     color: black;
     line-height: 1.5;
   }
+/*footer*/
   .footer {
     background-color: #e0e0e0;
     padding: 1.875rem 1.25rem;
